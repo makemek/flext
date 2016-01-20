@@ -510,7 +510,7 @@
     <Link>
       <AdditionalDependencies>pd.lib;pthreadVC.lib;$(STK_LIB);$(SNDOBJ_LIB);%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>.\pd-msvc\flext-pd.dll</OutputFile>
-      <AdditionalLibraryDirectories>$(PDPATH)\bin;$(PTHREADS_LIB);$(STK_LIB);$(SNDOBJ_LIB);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(PDBUILD)\bin;$(PTHREADSLIB);$(STK_LIB);$(SNDOBJ_LIB);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <OptimizeReferences>false</OptimizeReferences>
       <ImportLibrary>./pd-msvc/flext-pd.lib</ImportLibrary>

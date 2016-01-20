@@ -2,15 +2,16 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
-    <FLEXTPATH>C:\flext_svn\</FLEXTPATH>
+    <FLEXTPATH>C:\cpp3rdpartylib\flext\</FLEXTPATH>
     <MAXSDKPATH>C:\maxmspsdk\c74support</MAXSDKPATH>
-    <PDPATH>C:\_pd_</PDPATH>
+    <PDPATH>C:\cpp3rdpartylib\pd-extended</PDPATH>
     <STK_INC>%HOMEDRIVE%\%HOMEPATH%\stk\include</STK_INC>
     <STK_LIB />
     <SNDOBJ_INC>%HOMEDRIVE%\%HOMEPATH%\SndObj\include</SNDOBJ_INC>
     <SNDOBJ_LIB />
-    <PTHREADSINC>%HOMEDRIVE%\%HOMEPATH%\pthreads\include</PTHREADSINC>
-    <PTHREADSLIB />
+    <PTHREADSINC>C:\Users\Apipol\pthread\Pre-built\include</PTHREADSINC>
+    <PTHREADSLIB>C:\Users\Apipol\pthread\Pre-built\lib</PTHREADSLIB>
+    <PDBUILD>C:\Program Files (x86)\pd</PDBUILD>
   </PropertyGroup>
   <PropertyGroup />
   <ItemDefinitionGroup>
@@ -21,6 +22,12 @@
       <AdditionalDependencies>
       </AdditionalDependencies>
     </Link>
+    <Lib>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
     <BuildMacro Include="FLEXTPATH">
@@ -58,6 +65,9 @@
     <BuildMacro Include="PTHREADSLIB">
       <Value>$(PTHREADSLIB)</Value>
       <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="PDBUILD">
+      <Value>$(PDBUILD)</Value>
     </BuildMacro>
   </ItemGroup>
 </Project>
